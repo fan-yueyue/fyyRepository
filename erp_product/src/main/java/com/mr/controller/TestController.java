@@ -27,6 +27,7 @@ public class TestController {
        Map<String,Object> mapa=new HashMap<String,Object>();
         mapa.put("key",id);
         mapa.put("value",productVO);
+
        return mapa;
    }
 
