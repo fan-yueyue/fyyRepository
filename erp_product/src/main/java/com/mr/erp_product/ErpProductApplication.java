@@ -14,5 +14,4 @@ public class ErpProductApplication {
 
         SpringApplication.run(ErpProductApplication.class);
     }
-
 }

@@ -18,7 +18,7 @@ public class TestController {
             @ApiImplicitParam(paramType = "query",dataType = "String",name="id",value="查询字符串id",required = true),
             @ApiImplicitParam(paramType = "query",dataType = "com.mr.entity.ProductVO",name="productVO",value="产品对象")
     })
-    @ApiResponses({
+    @ApiResponses({  //返回的状态
             @ApiResponse(code=200,message = "操作成功",response = Map.class),
             @ApiResponse(code=500,message = "系统内部报错")
     })
@@ -27,10 +27,6 @@ public class TestController {
        Map<String,Object> mapa=new HashMap<String,Object>();
         mapa.put("key",id);
         mapa.put("value",productVO);
-
-
-
-
        return mapa;
    }
 
